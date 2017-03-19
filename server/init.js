@@ -146,7 +146,8 @@ Meteor.startup(function () {
     {
       url="https://control.msg91.com/api/sendhttp.php?authkey=105176A5azKn6Yin056c344f3&mobiles=+"+number+"&message="+message+"&sender=131313&route=1&country=91";
       return Meteor.http.call("GET",url);
-    }
+    },
+
     // getUser: function(UserId) {
     //   user=Meteor.users.findOne({_id: UserId});
     //   if(user)

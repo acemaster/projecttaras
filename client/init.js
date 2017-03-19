@@ -455,6 +455,7 @@ Template.homepage.helpers({
 Template.portal.onRendered(function(){
   $('.tabular.menu .item').tab();
   this.subscribe('getUsers');
+  this.subscribe('getUserProfiles');
 });
 
 Template.portal.helpers({
@@ -542,5 +543,3 @@ Template.portalmap.helpers({
     return Session.get('longt');
   },
 });
-
-
